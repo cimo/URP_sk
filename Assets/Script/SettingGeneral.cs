@@ -17,6 +17,7 @@ namespace Setting {
                 Application.Quit();
 
             Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
     }
 }

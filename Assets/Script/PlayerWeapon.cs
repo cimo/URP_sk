@@ -39,12 +39,12 @@ namespace Player {
             statusPull = false;
 
             transform.parent = null;
-            transform.position += playerMovement.gameObject.transform.right / 5.0f;
-            transform.eulerAngles = new Vector3(0.0f, -90.0f + playerMovement.gameObject.transform.eulerAngles.y, 0.0f);
+            transform.position += playerMovement.gameObject.transform.right;
+            transform.eulerAngles = new Vector3(0.0f, playerMovement.gameObject.transform.eulerAngles.y - 90.0f, 0.0f);
             
             componentRigidbody.isKinematic = false;
             componentRigidbody.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
-            componentRigidbody.AddForce((Camera.main.transform.forward * speedMovement) + (playerMovement.gameObject.transform.up * 2), ForceMode.Impulse);
+            componentRigidbody.AddForce(Camera.main.transform.forward * speedMovement, ForceMode.Impulse);
 
             componentTrailRenderer.emitting = true;
         }
