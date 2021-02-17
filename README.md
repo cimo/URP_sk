@@ -6,13 +6,13 @@ Starter kit code for unity engine. Create in a few steps the complete 3D URP pro
 | Info: |
 |:---|
 | Cross platform (Windows, Linux, Mac, Android, Ios) |
-| PLayer controller |
+| Player controller |
 
 | Library: |
 |:---|
 | Unity engine - https://unity.com/ |
 
-<b>By CIMO - https://reinventsoftware.org</b>
+By CIMO - https://reinventsoftware.org
 
 Supported By:
 
